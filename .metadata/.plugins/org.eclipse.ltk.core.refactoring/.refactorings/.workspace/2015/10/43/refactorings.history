@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 10 resources" deleteContents="true" description="Delete 10 resources" element1="/jetty-start" element10="/TestJava" element2="/jetty-start-test" element3="/jetty-test-helper" element4="/jetty-util" element5="/jetty-util-test" element6="/jetty-xml" element7="/jetty-xml-test" element8="/jettyLib" element9="/JUnit4" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="10" stamp="1445694857506"/>
+</session>

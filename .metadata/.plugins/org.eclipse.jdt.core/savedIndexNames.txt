@@ -1,0 +1,19 @@
+INDEX VERSION 1.126+E:\workspace\mygitSpace\jetty9\.metadata\.plugins\org.eclipse.jdt.core
+2082994595.index
+1754471306.index
+1582171468.index
+4221840375.index
+1222124541.index
+2471455046.index
+3397248529.index
+967865420.index
+615555546.index
+1841362312.index
+396042584.index
+2967779277.index
+678757000.index
+289583975.index
+2236203958.index
+2536396164.index
+3898734385.index
+519746429.index
