@@ -810,6 +810,7 @@ public class XmlConfiguration {
 		 * Reference an id value object.
 		 * 
 		 * @param obj @param node @return @exception NoSuchMethodException
+		 * 
 		 * @exception ClassNotFoundException @exception
 		 * InvocationTargetException
 		 */
@@ -1076,6 +1077,7 @@ public class XmlConfiguration {
 
 		/*
 		 * Get the value of a single element. @param obj @param item @return
+		 * 
 		 * @exception Exception
 		 */
 		private Object itemValue(Object obj, Object item) throws Exception {
@@ -1143,7 +1145,7 @@ public class XmlConfiguration {
 	 */
 	public static void main(final String... args) throws Exception {
 		final AtomicReference<Throwable> exception = new AtomicReference<>();
-
+		// TODO 没有看明白这个类，以后再说吧
 		AccessController.doPrivileged(new PrivilegedAction<Object>() {
 			public Object run() {
 				try {
@@ -1151,6 +1153,7 @@ public class XmlConfiguration {
 					Properties properties = null;
 
 					// Look for properties from start.jar
+					// 先从start.jar中找到Config类，并试图通过该类的getProperties方法得到properties对象
 					try {
 						Class<?> config = XmlConfiguration.class
 								.getClassLoader().loadClass(

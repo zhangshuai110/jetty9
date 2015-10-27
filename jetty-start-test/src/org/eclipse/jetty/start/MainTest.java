@@ -83,7 +83,7 @@ public class MainTest {
 	}
 
 	@Test
-	@Ignore("Just a bit noisy for general testing")
+//	@Ignore("Just a bit noisy for general testing")
 	public void testListConfig() throws Exception {
 		List<String> cmdLineArgs = new ArrayList<>();
 		File testJettyHome = MavenTestingUtils.getTestResourceDir("usecases/home");
@@ -94,6 +94,9 @@ public class MainTest {
 
 		Main main = new Main();
 		StartArgs args = main.processCommandLine(cmdLineArgs.toArray(new String[cmdLineArgs.size()]));
+		CommandLineBuilder cmd = args.getMainArgs(main.getBaseHome(), false);
+		System.out.println("********");
+		System.out.println(cmd.getArgs().toString());
 		main.listConfig(args);
 	}
 

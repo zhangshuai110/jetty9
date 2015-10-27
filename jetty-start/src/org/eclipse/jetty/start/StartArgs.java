@@ -462,6 +462,8 @@ public class StartArgs {
 		ensureSystemPropertySet("STOP.WAIT");
 
 		// pass properties as args or as a file
+		// 将properties存储为args或文件
+		// 如果存放的是文件，将文件的路径添加到cmd中，并作为调用XmlConfiguration的参数
 		if (dryRun || isExec()) {
 			for (Prop p : properties)
 				cmd.addRawArg(CommandLineBuilder.quote(p.key) + "="

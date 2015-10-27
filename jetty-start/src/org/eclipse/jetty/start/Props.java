@@ -316,6 +316,15 @@ public final class Props implements Iterable<Prop> {
 		return props.size();
 	}
 
+	/**
+	 * 经过跟踪，写出的内容如下： <br>
+	 * #start.jar properties <br>
+	 * #Tue Oct 27 22:49:56 CST 2015 <br>
+	 * jetty.port=9090
+	 * jetty.home=/Users/huyinhui/Documents/jetty9/jetty-start-test
+	 * /src/test/resources/usecases/home
+	 */
+	// TODO 这里有个疑问，前两行文件的注释是如何写的。
 	public void store(OutputStream stream, String comments) throws IOException {
 		Properties props = new Properties();
 		// add all Props as normal properties, with expansion performed.

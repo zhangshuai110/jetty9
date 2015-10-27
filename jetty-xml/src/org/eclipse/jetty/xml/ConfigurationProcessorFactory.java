@@ -18,7 +18,7 @@
 
 package org.eclipse.jetty.xml;
 
-public interface ConfigurationProcessorFactory
-{
-    ConfigurationProcessor getConfigurationProcessor(String dtd, String tag);
+//TODO 这个接口居然没有被实现，不知道要他有什么用
+public interface ConfigurationProcessorFactory {
+	ConfigurationProcessor getConfigurationProcessor(String dtd, String tag);
 }

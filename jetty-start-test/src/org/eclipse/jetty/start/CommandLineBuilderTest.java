@@ -21,6 +21,8 @@ package org.eclipse.jetty.start;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -62,6 +64,11 @@ public class CommandLineBuilderTest
     @Test
     public void testToStringIsQuotedEvenIfArgsAreNotQuotedForProcessBuilder()
     {
+    	List<String> args = cmd.getArgs();
+    	for(String arg:args){
+    		System.out.println("arg:"+arg);	
+    	}
+    	
         System.out.println(cmd.toString());
     }
 
