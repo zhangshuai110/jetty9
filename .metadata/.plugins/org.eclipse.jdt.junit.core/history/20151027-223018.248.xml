@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MainTest" project="jetty-start-test" tests="7" started="7" failures="0" errors="0" ignored="2">
+  <testsuite name="org.eclipse.jetty.start.MainTest" time="0.513">
+    <testcase name="testWithCommandLine" classname="org.eclipse.jetty.start.MainTest" time="0.3"/>
+    <testcase name="testHelp" classname="org.eclipse.jetty.start.MainTest" time="0.001" ignored="true"/>
+    <testcase name="testListConfig" classname="org.eclipse.jetty.start.MainTest" time="0.0" ignored="true"/>
+    <testcase name="testWithSpdy" classname="org.eclipse.jetty.start.MainTest" time="0.127"/>
+    <testcase name="testStopProcessing" classname="org.eclipse.jetty.start.MainTest" time="0.003"/>
+    <testcase name="testBasicProcessing" classname="org.eclipse.jetty.start.MainTest" time="0.078"/>
+    <testcase name="testJettyHomeWithSpaces" classname="org.eclipse.jetty.start.MainTest" time="0.004"/>
+  </testsuite>
+</testrun>

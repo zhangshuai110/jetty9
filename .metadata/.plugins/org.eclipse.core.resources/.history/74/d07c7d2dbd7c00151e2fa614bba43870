@@ -1,0 +1,14 @@
+   public class MyAuthenticator extends Authenticator {
+        private String username = "";
+        private String password = "";
+        public MyAuthenticator(String username, String password) {
+            this.username = username;
+            this.password = password;
+        }
+        protected PasswordAuthentication getPasswordAuthentication() {
+            returnnew PasswordAuthentication(username, password.toCharArray());
+        }
+    }
+
+   //设置登陆到代理服务器的用户名和密码
+   Authenticator.setDefault(new MyAuthenticator("userName", "Password"));

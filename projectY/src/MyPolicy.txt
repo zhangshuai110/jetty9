@@ -1,0 +1,6 @@
+// 授权工程 A 执行文件路径中文件在本目录中的写文件权限
+ grant codebase "file:/D:/workspace/projectX/bin"
+ { 
+  permission java.io.FilePermission 
+    "D:\\workspace\\projectX\\bin\\*", "write"; 
+ };
